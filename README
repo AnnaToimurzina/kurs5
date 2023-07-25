@@ -1,0 +1,13 @@
+Описание проекта
+
+Проект Parsing HH это скрипт на языке Python, который позволяет собрать данные о вакансиях с сайта hh.ru и сохранить их в базу данных PostgreSQL.
+
+Как запустить проект
+Установите необходимые зависимости, выполнив команду: poetry install --no-dev
+
+Создайте базу данных PostgreSQL и выполните скрипт create_tables.sql, чтобы создать необходимые таблицы в базе данных.
+
+В файле main.py укажите параметры подключения к базе данных, введите свои данные:
+conn = psycopg2.connect(host='localhost', database='parsing_hh', user='postgres', password='your_password')
+
+Запустите скрипт main.py, выполнив команду: python main.py
